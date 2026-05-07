@@ -1,9 +1,17 @@
 import React from 'react'
 
-function Input() {
+function Input({
+  type,
+  name,
+  placeholder
+}) {
   return (
     <div>
-      
+      <input
+       type={type} 
+       name={name}
+       placeholder={placeholder}
+      />
     </div>
   )
 }
